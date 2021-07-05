@@ -13,6 +13,21 @@ body {
   background-image: linear-gradient(#cd853f, #f4a460);
   padding: 10px 10%;
 }
+.logo-container {
+  display: flex;
+}
+.company-name {
+  margin: 0 10px;
+  display: inline-block;
+  font-size: 1.5em;
+  color: snow;
+}
+.logo {
+  height: 25px;
+  border: 1px solid seashell;
+  padding: 2px 15px;
+  box-shadow: 0px 5px 5px snow;
+}
 .menu-items {
   list-style: none;
   margin: 0;
@@ -21,11 +36,15 @@ body {
 .item {
   display: inline-block;
 }
+.logo-link {
+  text-decoration: none;
+  color: #e34234;
+}
 .link {
   text-decoration: none;
   color: #e34234;
   padding: 5px 20px;
-  font-size: 0.95em;
+  font-size: 1.3em;
   text-shadow: 0px 0.5px 0px #4d4d4d;
 }
 .link:hover {
@@ -37,7 +56,9 @@ body {
   transition: 0.5s;
 }
 /* social media icons */
-
+.social-icons {
+  float: left;
+}
 ol {
   position: fixed;
   top: 50%;
@@ -106,3 +127,88 @@ ol li:nth-child(5) a:hover .fab {
 }
 
 /* end of social media icons */
+
+/* banner section start */
+.banner {
+  padding: 0 10%;
+  background-image: url(images/top-banner.png);
+  background-repeat: no-repeat;
+  display: flex;
+}
+h1 {
+  font-size: 3.5em;
+  margin: 0.5em 0em;
+}
+h2 {
+  font-size: 3em;
+  margin: 0.3em 0em;
+}
+.banner .left-side {
+  background-image: linear-gradient(#f5f5f5, #fff5ee);
+  padding: 0.3em 0.8em;
+  box-shadow: -1em 1em 1em grey;
+}
+.banner .right-side {
+  background-image: linear-gradient(#fff5ee, #f5f5f5);
+  padding: 0.3em 0.8em;
+  box-shadow: 1em 1em 1em grey;
+}
+
+.left-side,
+.right-side {
+  width: 50%;
+}
+.left-side p {
+  margin-bottom: 2.5em;
+  text-align: justify;
+}
+.right-side img {
+  width: 100%;
+}
+.link-button {
+  border-bottom: 2px solid cornflowerblue;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 0 1px 2px #000;
+  background-image: linear-gradient(#cd853f, #f4a460);
+  padding: 5px 50px;
+  border-radius: 5px;
+}
+.link-button:hover {
+  border-left: 5px solid;
+  border-image: linear-gradient(blue, cyan);
+  border-image-slice: 1;
+  box-shadow: inset 2em 0.5em gold;
+  color: beige;
+  transition: 0.3s;
+  border-bottom: 0;
+}
+
+.code-lang {
+  margin-top: 50px;
+  display: flex;
+}
+.code-lang img {
+  width: 27.5%;
+  box-shadow: 0 -10px 15px grey;
+  margin: 0 10px;
+}
+/* .lang-name {
+  border: 1px solid whitesmoke;
+  box-shadow: 0 -10px 15px grey;
+  background-image: linear-gradient(
+    rgba(0, 255, 255, 1),
+    rgba(255, 217, 0, 1),
+    rgba(255, 99, 71, 1)
+  ); 
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}*/
+.lang-name ul {
+  list-style: none;
+}
+.lang-list {
+  padding: 10px 5px;
+  font-size: 1.5em;
+}
